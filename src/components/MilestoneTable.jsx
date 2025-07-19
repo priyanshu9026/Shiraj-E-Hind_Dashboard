@@ -17,7 +17,7 @@ const MilestonesTable = () => {
 
   const getMilestones = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/milestones");
+      const res = await axios.get("https://shiraj-e-hind-backend.onrender.com/milestones");
       setData(res.data);
     } catch (error) {
       console.error("Error fetching milestones:", error);
@@ -41,7 +41,7 @@ const MilestonesTable = () => {
   const handleAddMilestone = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/milestones", newMilestone);
+      await axios.post("https://shiraj-e-hind-backend.onrender.com/milestones", newMilestone);
       setShowModal(false);
       setNewMilestone({ year: "", title: "", description: "", photourl: "" });
       getMilestones();

@@ -20,7 +20,7 @@ const NewsTable = () => {
 
   const fetchNews = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/news");
+      const res = await axios.get("https://shiraj-e-hind-backend.onrender.com/news");
       setNewsData(res.data);
     } catch (error) {
       console.error("Error fetching news:", error);
@@ -35,7 +35,7 @@ const NewsTable = () => {
   const handleAddNews = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/news", newNews);
+      await axios.post("https://shiraj-e-hind-backend.onrender.com/news", newNews);
       setShowModal(false);
       setNewNews({ title: "", content: "", imageUrl: "" });
       fetchNews();

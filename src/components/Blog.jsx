@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() => {
     const getNews = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/news");
+        const res = await axios.get("https://shiraj-e-hind-backend.onrender.com/news");
         setData(res.data);
       } catch (error) {
         console.error("Error fetching news:", error);

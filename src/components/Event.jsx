@@ -18,7 +18,7 @@ const Event = () => {
 
   const getEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/events");
+      const res = await axios.get("https://shiraj-e-hind-backend.onrender.com/events");
       setData(res.data);
     } catch (error) {
       console.error("Error fetching events:", error);
@@ -42,7 +42,7 @@ const Event = () => {
   const handleAddEvent = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/events", newEvent);
+      await axios.post("https://shiraj-e-hind-backend.onrender.com/events", newEvent);
       setShowModal(false);
       setNewEvent({
         title: "",

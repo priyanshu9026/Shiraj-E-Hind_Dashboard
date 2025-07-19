@@ -5,7 +5,7 @@ const TeamTable = () => {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/team_members")
+    axios.get("https://shiraj-e-hind-backend.onrender.com/team_members")
       .then((res) => setTeam(res.data))
       .catch((err) => console.error(err));
   }, []);

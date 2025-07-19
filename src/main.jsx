@@ -6,9 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Volunteers from "./components/Volunteers.jsx";
 import Donation from "./components/Donation.jsx";
 import Event from "./components/Event.jsx";
-import Beneficiaries from "./components/beneficiaries.jsx";
 import MilestonesTable from "./components/MilestoneTable.jsx";
 import NewsTable from "./components/NewsTable.jsx";
+import Beneficiaries from "./components/beneficiaries.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       { path: "/volunteers", element: <Volunteers /> },
       { path: "/donations", element: <Donation /> },
       { path: "/events", element: <Event /> },
-      {path: "/milestones", element: <MilestonesTable /> },
+      { path: "/milestones", element: <MilestonesTable /> },
       { path: "/beneficiaries", element: <Beneficiaries /> },
       { path: "/blog", element: <NewsTable /> },
     ],
