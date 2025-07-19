@@ -9,12 +9,14 @@ import Event from "./components/Event.jsx";
 import MilestonesTable from "./components/MilestoneTable.jsx";
 import NewsTable from "./components/NewsTable.jsx";
 import Beneficiaries from "./components/Beneficiaries.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      { path: "/dashboard", element: <Dashboard /> },
       { path: "/volunteers", element: <Volunteers /> },
       { path: "/donations", element: <Donation /> },
       { path: "/events", element: <Event /> },
