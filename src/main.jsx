@@ -8,7 +8,7 @@ import Donation from "./components/Donation.jsx";
 import Event from "./components/Event.jsx";
 import MilestonesTable from "./components/MilestoneTable.jsx";
 import NewsTable from "./components/NewsTable.jsx";
-import Beneficiaries from "./components/beneficiaries.jsx";
+import Beneficiaries from "./components/Beneficiaries.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,3 +28,4 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
+Beneficiaries
